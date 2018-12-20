@@ -2,9 +2,9 @@ import { Kind } from 'graphql';
 import { hasDefinitionWithName } from './astHelpers';
 
 const typesMap = {
-  query: 'Query',
-  mutation: 'Mutation',
-  subscription: 'Subscription',
+  query: 'query_root',
+  mutation: 'mutation_root',
+  subscription: 'subscription_root',
 };
 
 const _mergeableOperationTypes = Object.keys(typesMap);
